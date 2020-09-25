@@ -1,5 +1,7 @@
 package com.group.book.pojo;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class Book {
@@ -11,6 +13,7 @@ public class Book {
 
     private String publish;
 
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date publishdate;
 
     private Integer page;

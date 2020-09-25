@@ -12,7 +12,7 @@
 </head>
 <script src="/static/js/jquery-1.12.4.js"></script>
 <body>
-<form action="/zht/dologin" method="post">
+<form action="/selectAll" method="post">
     <table align="center" border="1px">
         <tr align="center">
             <td colspan="2">
