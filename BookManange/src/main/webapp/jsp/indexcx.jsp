@@ -7,7 +7,13 @@
     <script src="/static/js/jquery-1.12.4.js"></script>
 </head>
 <body>
+    <h3>图书系统管理员欢迎您</h3>
     <table border="1px" width="1000px">
+        <tr>
+            <td colspan="8" align="center">
+                <h2>图书纤细详细列表</h2>
+            </td>
+        </tr>
         <tr>
             <td>书名</td>
             <td>作者</td>
@@ -28,13 +34,14 @@
                 <td>${item.page}</td>
                 <td>${item.price}</td>
                 <td>${item.content}</td>
-                <td><a href="">修改</a>&nbsp;<a href="javascript:void(0)" onclick="del(${item.id})">删除</a></td>
+                <td><a href="/sjl/upd/${item.id}">修改</a>&nbsp;<a href="javascript:void(0)" onclick="del(${item.id})">删除</a></td>
             </tr>
 
         </c:forEach>
     </table>
 
     <div>
+        <button onclick="add()">新增图书</button>
         <a href="/selectAll?pageNum=${bookPageInfo.firstPage}">首页</a>
         <c:if test="${bookPageInfo.hasPreviousPage}">
             <a href="/selectAll?pageNum=${bookPageInfo.prePage}">上一页</a>
@@ -57,5 +64,7 @@
             location.href="/del?id="+id;
         }
     }
-
+    function add() {
+        location.href="/jsp/add.jsp";
+    }
 </script>

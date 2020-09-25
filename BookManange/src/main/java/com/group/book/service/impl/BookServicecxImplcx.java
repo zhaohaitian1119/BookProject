@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
 
-@Service("bookService")
+@Service("bookServicecx")
 public class BookServicecxImplcx implements BookServicecx {
     @Resource
     BookMapper bookMapper;
