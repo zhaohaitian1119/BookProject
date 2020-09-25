@@ -31,7 +31,7 @@ public class LoginControllerzht {
 
         int i = loginServicezht.loginByNamePassWord(name, password);
         if(i>0){
-            return "index";
+            return "redidect:selectAll";
         }else{
             model.addAttribute("error","用户名或密码错误!");
             return "login";
