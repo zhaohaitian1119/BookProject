@@ -7,10 +7,6 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
-/**
- * @author shkstart
- * @create 2020-09-25 11:42
- */
 @Service("loginServicezht")
 public class LoginServicezhtImpl implements LoginServicezht {
 
